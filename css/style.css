@@ -23,6 +23,9 @@ p{
 .header .container{
   display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
 }
+.main_logo{
+  width:60px;
+}
 .main_logo img{
   width:32px; height:32px;
 }
