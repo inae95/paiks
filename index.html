@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+
+
+  <!-- slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+  <title>빽다방</title>
+  
+  <!-- reset -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({auto:true,autoHover: true});
+    });
+    $(document).ready(function(){
+      var placeholderTarget = $('.store_tit_box input[type="text"]');
+  
+    //포커스시
+    placeholderTarget.on('focus', function(){
+      $(this).siblings('label').fadeOut('fast');
+    });
+
+    //포커스아웃시
+    placeholderTarget.on('focusout', function(){
+        if($(this).val() == ''){
+          $(this).siblings('label').fadeIn('fast');
+        }
+      });
+    });
+  </script>
+
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="container">
+        <a href="#">
+          <div class="main_logo">
+              <img src="./images/logo.png" alt="빽다방로고">
+              <p>빽다방</p>
+          </div>
+        </a>
+          <a href="#">
+            <ul class="btn_ham">
+                <li>ham_line01</li>
+                <li>ham_line02</li>
+                <li>ham_line03</li>
+            </ul>
+        </a>
+      </div>
+    </div>
+
+    <!-- section -->
+    <div class="section">
+      <div class="conteiner">
+        <article class="main_banner">
+          <div class="slider">
+            <div>
+            <img src="./images/main_banner01.png" alt="메인배너01">
+            </div>
+            <div>
+              <img src="./images/main_banner02.png" alt="메인배너02">
+            </div>
+            <div>
+              <img src="./images/main_banner03.png" alt="메인배너03">
+            </div>
+            <div>
+              <img src="./images/main_banner04.png" alt="메인배너04">
+            </div>
+            <div>
+              <img src="./images/main_banner05.png" alt="메인배너05">
+            </div>
+            <div>
+              <img src="./images/main_banner06.png" alt="메인배너06">
+            </div>
+          </div>
+        </article>
+        <article class="coffee_store">
+          <div class="coffee_store_txt">
+            <span>The Finest Quality Coffee Plants</span>
+            <h1>PAIK’S COFFEE STORY</h1>
+            <p>균형잡힌 바디감으로 긴여운을 남기는 빽다방 커피를 만나보세요.</p>
+          </div>
+          <div class="coffee_store_img">
+            <img src="./images/coffee_story.png" alt="커피스토리">
+          </div>
+        </article>
+        <article class="sub_banner">
+          <div class="mmain_sec2">
+            <div class="sub_banner_tit2">
+              <h2>FRESH<br>
+                  COFFEE
+              </h2>
+            </div>
+            <div class="sub_banner_img">
+              <img src="./images/mmain_sec2.png" alt="서브배너02">
+            </div>
+          </div>
+          <div class="mmain_sec3">
+            <div class="sub_banner_tit3">
+              <h2>VARIOUS<br>
+                  BEVERAGE
+              </h2>
+            </div>
+            <div class="sub_banner_img">
+              <img src="./images/mmain_sec3.png" alt="서브배너03">
+            </div>
+          </div>
+          <div class="mmain_sec4">
+            <div class="sub_banner_tit4">
+              <h2>SWEET<br>
+                 PAIK'S CCINO
+              </h2>
+            </div>
+            <div class="sub_banner_img">
+              <img src="./images/mmain_sec4.png" alt="서브배너04">
+            </div>
+          </div>
+          <div class="mmain_sec5">
+            <div class="sub_banner_tit5">
+              <h2>TASTY<br>
+                  ICE CREAM /<br>
+                  DESSERT
+              </h2>
+              <div></div>
+            </div>
+            <div class="sub_banner_img">
+              <img src="./images/mmain_sec5.png" alt="서브배너05">
+            </div>
+          </div>
+        </article>
+        <article class="franchise_store">
+          <div class="row">
+            <article class="franchise">
+              <h3>FRANCHISE</h3>
+              <p>
+                빽다방 창업안내를 도와드리겠습니다.
+              </p>
+              <img src="./images/FRAINCHISE.png" alt="빽사장">
+            </article>
+            <article class="store">
+              <h3>STORE</h3>
+              <p>
+                원하시는 지역의 매장을 검색해 보세요!
+              </p>
+              <div class="store_tit_box">
+                <label for="sns_input">
+                  Find a store in Your area!
+                </label>
+                <input type="text" id="sns_input">
+               </div>
+            </article>
+          </div>
+        </article>
+        <article class="paiks_coffee_sns">
+          <div>
+            <span>
+              PAIK’S COFFEE SNS
+            </span>
+          </div>
+          <ul>
+            <li>#빽다방</li>
+            <li>#빽다방신메뉴</li>
+            <li>#빽다방이벤트</li>
+          </ul>
+          <div class=sns_line></div>
+          <div class="sns">
+            <a href="#">
+              <img src="./images/facebook.png" alt="페이스북">
+            </a>          
+            <a href="#">
+              <img src="./images/insta.png" alt="인스타그램">
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+    
+    <!-- footer -->
+    <div class="footer">
+      <div class="conteiner">
+        <div class="footer_logo">
+          <a href="#">
+            <img src="./images/footer_logo.png" alt="더본코리아">
+          </a>
+         </div>
+        <div class="footer_tit">
+          <p>
+          (주)더본코리아<br>
+          사업자등록번호 211-86-00870<br>
+          대표이사 백종원<br>
+          주소: 서울시 강남구 봉은사로 1길 39 유성빌딩 5~6층<br>
+          팩스: 02-511-3864<br>
+          본사 대표전화: 02-549-3864<br>
+          가맹상담전화: 02-3447-0410<br>
+          고객센터: 1544-2360<br>
+          </p>
+        </div>
+        <span>
+          COPYRIGHTⓒ 2018 THEBORN KOREA INC. ALL RIGHTS RESERVED
+        </span>
+  
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>

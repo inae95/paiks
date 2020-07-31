@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+  font-family:'Noto Sans KR', sans-serif; color:#202020;
+}
+*{box-sizing:border-box}
+p{
+  font-family:'Noto Sans Korean'; font-weight:500; font-size:14px; color:#202020;
+}
+.wrap{
+  width:640px;
+}
+.container{
+  padding:18px 12px;
+}
+/* header CSS */
+.header{
+  height:70px;
+}
+.header .container{
+  display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+}
+.main_logo img{
+  width:32px; height:32px;
+}
+.main_logo p{
+  display:inline-block;  position:absolute; top:24px; margin-left:6px; font-weight:bold; font-size:24px; color:#0e347e;
+}
+.header .btn_ham{
+  width:32px; height:24px;
+}
+.header .btn_ham li{
+  text-indent:-999999px; width:32px; height:4px; border-radius:2px; background-color:black;
+}
+.header .btn_ham li:nth-child(2){
+  margin:6px 0;
+}
+
+/* section */
+/* slider */
+.bx-wrapper {
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+box-shadow:none;
+border:0;
+background: #fff;
+margin-bottom:0;
+}
+.bx-controls-direction{
+  display:none;
+}
+.bx-pager,.bx-default-pager{
+  padding-bottom: 50px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background: #ffe600;
+}
+.bx-wrapper .bx-pager.bx-default-pager a{
+  background:white;
+}
+/* coffee_store */
+.coffee_store{
+  position:relative; width:640px; height:285px; overflow:hidden;
+}
+.coffee_store>.coffee_store_img{
+  height:100%;
+}
+.coffee_store>.coffee_store_img>img{
+  height:100%; transform: translateX(-38%);
+}
+.coffee_store_txt{
+  z-index: 10; position:absolute; top:27px; left:12px;
+}
+.coffee_store>.coffee_store_txt{
+  position: absolute;
+}
+.coffee_store>.coffee_store_txt>span{
+  font-family:'Roboto'; font-weight:bold; font-size:18px;
+}
+.coffee_store>.coffee_store_txt>h1{
+  padding:5px 0 10px 0; font-family:'Roboto'; font-weight:bold; font-size:56px; color:#0e347e;
+}
+/* mmain */
+.sub_banner>.mmain_sec2{
+   position: relative; padding-bottom:10px;
+}
+.sub_banner_img>img{
+  height:342px;;
+}
+.sub_banner_tit2{
+  position:absolute; top:27px; left:17px; border-bottom:2px solid #6b4d30; padding-bottom:7px;
+}
+.sub_banner>.mmain_sec2>.sub_banner_tit2>h2{
+  font-family:'Roboto'; font-weight:bold; font-size:24px; color:#6b4d30;
+}
+
+.sub_banner>.mmain_sec3{
+   position: relative; padding-bottom:10px;
+}
+.sub_banner_img>img{
+  height:342px;
+}
+.sub_banner_tit3{
+  position:absolute; top:27px; left:17px; border-bottom:2px solid #93a03d; padding-bottom:7px;
+}
+.sub_banner>.mmain_sec3>.sub_banner_tit3>h2{
+  font-family:'Roboto'; font-weight:bold; font-size:24px; color:#93a03d;
+}
+
+.sub_banner>.mmain_sec4{
+   position: relative; padding-bottom:10px;
+}
+.sub_banner_img>img{
+  height:342px;
+}
+.sub_banner_tit4{
+  position:absolute; top:27px; left:17px; border-bottom:2px solid #ccb800; padding-bottom:7px;
+}
+.sub_banner>.mmain_sec4>.sub_banner_tit4>h2{
+  font-family:'Roboto'; font-weight:bold; font-size:24px; color:#ccb800;
+}
+
+.sub_banner>.mmain_sec5{
+   position: relative; padding-bottom:10px;
+}
+.sub_banner_img>img{
+  height:342px;
+}
+.sub_banner_tit5{
+  position:absolute; top:27px; left:17px;
+}
+.sub_banner_tit5>div{
+  width:100px; border-bottom:2px solid #f1ae1d; padding-bottom:7px;
+}
+.sub_banner>.mmain_sec5>.sub_banner_tit5>h2{
+  font-family:'Roboto'; font-weight:bold; font-size:24px; color:#f1ae1d;
+}
+/* franchise_store */
+.row{
+  display:flex; height:291px;
+}
+.franchise_store>.row>.franchise{
+  width:302px; border:2px solid #0e347e; padding:16px 0 0 16px; margin-left:13px; margin-right:12px;
+}
+.franchise_store>.row>.franchise>h3{
+  font-family:'Roboto'; font-weight: black; font-size:34px; color:#0e347e;
+}
+.franchise_store>.row>.franchise>p{
+  padding-top: 17px;
+}
+.franchise_store>.row>.franchise>img{
+  width:100%; padding-top:5px;
+}
+
+.franchise_store>.row>.store{
+  padding-left:10px;
+}
+.franchise_store>.row>.store{
+  width:302px; border:2px solid #0e347e; padding:16px 0 0 16px;
+}
+.franchise_store>.row>.store>h3{
+  font-family:'Roboto'; font-weight: black; font-size:34px; color:#0e347e;
+}
+.franchise_store>.row>.store>p{
+  padding: 10px 0 140px 0;
+}
+.franchise_store>.row>.store>img{
+  width:100%; padding-top: 12px;
+}
+.franchise_store>.row>.store>.store_tit_box{
+  position:relative;width:263px; height:34px; border:2px solid #0e347e; 
+}
+.franchise_store>.row>.store>.store_tit_box>label{
+  position:absolute; top:6px; left:7px; font-weight: 500; font-size: 14px; color: #757575;
+}
+.franchise_store>.row>.store>.store_tit_box input[type="text"]{
+  width:100%; height:100%; border:0;
+}
+.franchise_store>.row>.store>.store_tit_box::before{
+  position:absolute; top:5px; right: 10px; content:''; display:block; width:12px; height:12px; border:2px solid #0e347e; border-radius:50%;
+}
+.franchise_store>.row>.store>.store_tit_box::after{
+  position:absolute; top:22px; right:10px; content:''; display:block; width:10px; height:10px; border-bottom:2px solid #0e347e;
+  transform:rotate(220deg) translate(0, 5px)
+}
+:focus{
+  outline:none;
+}
+input[type="text" i] {
+  padding: 1px 10px;
+}
+
+/* sns */
+.paiks_coffee_sns{
+height:341px; text-align:center;  display:flex; flex-flow:column nowrap; justify-content:center; border-bottom:1px solid #eeeeee;
+}
+.paiks_coffee_sns>div{
+  padding-bottom:26px;
+}
+.paiks_coffee_sns>div>span{
+   font-family:'Roboto'; font-weight:500; font-size:30px;
+}
+.paiks_coffee_sns>ul{
+  display:flex; justify-content:center;
+}
+.paiks_coffee_sns>ul>li{
+  font-weight:bold; color:#999999; padding-right:25px
+}
+.paiks_coffee_sns>.sns_line{
+  margin: 0 auto; margin-bottom:26px; width:96px; height:2px; border-bottom:1px solid #0e347e;
+}
+
+.paiks_coffee_sns>.sns>a>img{
+  margin:0 auto; width:32px; height:32px;
+}
+.paiks_coffee_sns>.sns>a:first-child{
+  padding-right:10px;
+}
+/* footer */
+.footer{
+  margin:auto; height:409px; 
+}
+.footer .conteiner{
+  padding-top:30px;
+}
+.footer_logo{
+  margin:0 auto; margin-bottom:35px; width:179px; height:47px;
+}
+.footer_logo>a>img{
+  width:179px; height:47px;
+}
+.footer_tit>p{
+  margin-bottom: 50px; font-weight:bold; line-height:25px; color:#262626; text-align:center;
+}
+.footer>span{
+  margin:0 auto; font-family:'Roboto'; font-weight:500; font-size:16px;
+}
+.sub_banner_img{
+  overflow: hidden;
+  }
+.conteiner>span{
+  display:block; text-align:center;
+}
